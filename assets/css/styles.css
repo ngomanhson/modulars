@@ -78,7 +78,15 @@ a {
 
 /* Header */
 .header {
-    padding: 28px 0 13px;
+    margin-top: 8px;
+    padding: 20px 0 13px;
+    background: #efefef;
+}
+
+.header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 11;
 }
 
 .header__inner {
@@ -119,7 +127,8 @@ a {
     text-shadow: 1px 0 0 currentColor;
 }
 
-.header-action__btn:hover {
+.header-action__btn:hover,
+.hero__cta-btn:hover {
     background: var(--white);
     color: var(--primary-color);
 }
@@ -137,4 +146,73 @@ a {
     height: 2px;
     background: var(--primary-color);
     z-index: 1;
+}
+
+.hero__content {
+    font-family: "Public Sans";
+    width: 35%;
+}
+
+.hero__heading {
+    margin-top: 103px;
+    width: 368px;
+    font-weight: 800;
+    font-size: 4.3rem;
+    line-height: 1.2;
+    color: #152427;
+}
+
+.hero__desc {
+    width: 341px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575d5e;
+}
+
+.hero__row {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__play-btn {
+    position: relative;
+    margin-left: 43px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #83a17d;
+    cursor: pointer;
+    transition: var(--animation);
+}
+
+.hero__play-btn::after {
+    position: absolute;
+    content: url(../icons/hero-decor-01.svg);
+    top: -7px;
+    left: -7px;
+}
+
+.hero__play-btn:hover,
+.hero__play-btn:hover .hero__play-btn::after {
+    background: var(--primary-color);
+    transform: rotate(360deg);
+}
+
+.hero__play-watch {
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #152427;
 }
