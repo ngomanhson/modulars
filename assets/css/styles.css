@@ -416,12 +416,18 @@ a {
     border-radius: 20px 20px 0px 0px;
     width: 370px;
     height: 318px;
+    overflow: hidden;
+}
+
+.course__list--item:hover .course__img {
+    transform: scale(1.02);
 }
 
 .course__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: var(--animation);
 }
 
 .course__list--item--info {
@@ -661,4 +667,105 @@ a {
     margin-top: 20px;
     height: 1px;
     border: 1px solid #83a17d;
+}
+
+/* Process */
+.process {
+    padding-top: 115px;
+}
+
+.process__inner {
+    position: relative;
+}
+
+.process-label {
+    margin-left: 47px;
+}
+
+.process-heading {
+    width: 477px;
+    margin-top: 20px;
+}
+
+.process-heading::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    top: 80px;
+    left: 394px;
+    background: #152427;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process__item--img {
+    position: absolute;
+    top: -58px;
+    right: 92px;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+}
+
+.process__list--item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 155px;
+    padding: 0 30px;
+    border-bottom: 1px solid #83a17d;
+    transition: var(--animation);
+}
+
+.process__list--item:hover {
+    background: #e2eddf;
+    border-radius: 33px;
+    border-bottom: 1px solid transparent;
+    border: none;
+}
+
+.process__list--item:hover .process__item--cta {
+    display: block;
+}
+
+.process__item--number {
+    font-weight: 600;
+    font-size: 7.2rem;
+    line-height: 0.72;
+    color: #143c3c;
+}
+
+.process__item--wrap {
+    margin-left: 64px;
+}
+
+.process__item--title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #152427;
+}
+
+.process__item--cta {
+    display: none;
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #575d5e;
+    text-decoration: underline;
+}
+
+.process__item--desc {
+    width: 572px;
+    height: 84px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #7d8188;
+    margin-left: auto;
 }
