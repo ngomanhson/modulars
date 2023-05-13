@@ -447,7 +447,7 @@ a {
 
 /* About */
 .about {
-    margin-top: 156px;
+    padding-top: 156px;
 }
 
 .about__inner {
