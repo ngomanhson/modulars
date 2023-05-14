@@ -8,8 +8,9 @@
     --animation: 0.3s linear;
     --primary-color: #143c3c;
     --white: #fff;
-    --light-green: #e2eddf;
     --black: #152427;
+    --gray: #6a8383;
+    --light-green: #e2eddf;
     --light-gray: #7d8188;
     --black-gray: #575d5e;
 }
@@ -805,7 +806,7 @@ a {
 
 .features__right--desc {
     width: 572px;
-    color: #6a8383;
+    color: var(--gray);
 }
 
 .features__right--link {
@@ -1025,6 +1026,8 @@ a {
 .blog-info__title {
     padding: 0 10px 10px 0;
     margin-top: 13px;
+
+    min-height: 90px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -1050,4 +1053,111 @@ a {
     top: 0;
     left: 0;
     background: #c4c4c4;
+}
+
+/* Footer */
+.footer {
+    margin-top: 102px;
+    padding-bottom: 50px;
+    background: var(--primary-color);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__heading {
+    margin-top: 72px;
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: var(--white);
+}
+
+.subscribe-form__input {
+    margin-top: 25px;
+    width: 319px;
+    height: 40px;
+    padding-right: 15px;
+    border: none;
+    outline: none;
+    color: var(--white);
+    background: transparent;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.footer__submit--btn {
+    background: transparent;
+    border: none;
+    color: #c4c4c4;
+    cursor: pointer;
+    transition: var(--animation);
+}
+
+.footer__submit--btn:hover {
+    color: var(--white);
+}
+
+.footer__left--line {
+    width: 354px;
+    height: 1px;
+    background: var(--gray);
+}
+
+.social-list {
+    margin-top: 47px;
+    display: flex;
+    column-gap: 22px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    color: #fbfbfb;
+    border-radius: 50%;
+    border: 1px solid #265252;
+    transition: var(--animation);
+}
+
+.social-item:hover {
+    background: #a75325;
+}
+
+.footer__row {
+    margin-top: 94px;
+    display: flex;
+    column-gap: 50px;
+    font-family: "Public Sans", sans-serif;
+}
+
+.footer__column--title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: var(--white);
+    padding-bottom: 15px;
+    transition: var(--animation);
+}
+
+.footer__link {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.25;
+    color: var(--gray);
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__line {
+    margin-top: 45px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #143c3c 2.28%, #295a5a 55.65%, rgba(38, 82, 82, 0) 102.06%);
 }
